@@ -12,6 +12,7 @@ import Book from "./pages/Book";
 // Books
 import { books } from "./utils/books";
 import Footer from "./components/Footer";
+import Books from "./pages/Books";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/books" element={<Books />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/books/:bookId" element={<Book books={books} />} />
         </Routes>

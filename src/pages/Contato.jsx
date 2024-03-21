@@ -33,7 +33,10 @@ const Contato = () => {
   };
 
   return (
-    <main className="flex justify-center items-center flex-col">
+    <main
+      className="flex justify-center items-center flex-col"
+      style={{ height: "99vh" }}
+    >
       <h1 className="font-bold text-2xl mt-10">Deixe seu feedback</h1>
 
       <form

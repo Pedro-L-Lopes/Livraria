@@ -65,6 +65,25 @@ const home = () => {
           ))}
         </article>
       </section>
+      <section className="flex flex-col justify-center items-center mt-10 p-5 bg-gray-100">
+        <h1 className="font-extrabold">Receba novidades, inscreva-se!</h1>
+        <h2>Receba promoções e conteúdos exclusivos.</h2>
+        <form className="flex justify-center items-center mt-5 mb-5">
+          <input
+            type="text"
+            placeholder="Seu nome"
+            className="p-2 border mx-2 rounded-sm"
+          />
+          <input
+            type="email"
+            placeholder="Seu email"
+            className="p-2 border mx-2 rounded-sm"
+          />
+          <button className="p-2 bg-gray-800 text-white rounded-sm">
+            Cadastrar
+          </button>
+        </form>
+      </section>
     </main>
   );
 };

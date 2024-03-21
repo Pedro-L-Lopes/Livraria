@@ -50,7 +50,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    to="/livros"
+                    to="/books"
                     className="text-white hover:opacity-75 hover:border-b"
                   >
                     Livros

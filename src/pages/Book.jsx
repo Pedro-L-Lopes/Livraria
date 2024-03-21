@@ -8,7 +8,7 @@ const Book = ({ books }) => {
   if (!book) return <div>Livro não encontrado</div>;
 
   return (
-    <div className="max-w-2xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+    <main className="max-w-2xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
       <img className="w-full" src={book.img} alt={book.name} />
       <div className="p-4">
         <h1 className="text-lg font-semibold">{book.name}</h1>
@@ -16,7 +16,7 @@ const Book = ({ books }) => {
         <p className="text-gray-700 text-sm mt-2">Preço: ${book.price}</p>
         <p className="text-gray-700 text-sm mt-2">{book.description}</p>
       </div>
-    </div>
+    </main>
   );
 };
 
