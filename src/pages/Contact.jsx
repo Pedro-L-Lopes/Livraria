@@ -30,7 +30,7 @@ const Contact = () => {
       setSuccess(true);
       setTimeout(() => {
         setSuccess(false);
-        navigate("/");
+        navigate("/Livraria");
       }, 3000);
     }
   };

@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className="bg-gray-800 p-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <Link to="/" className="flex items-center  gap-3">
+          <Link to="/Livraria" className="flex items-center  gap-3">
             <img src={logo} Linklt="Logo" className="max-w-12 invert" />
             <h1 className="font-semibold text-3xl text-white">ORLINE</h1>
           </Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
               <ul className="md:flex items-center space-x-4">
                 <li>
                   <Link
-                    to="/"
+                    to="/Livraria"
                     className="text-white hover:opacity-75 hover:border-b"
                   >
                     Inicio
