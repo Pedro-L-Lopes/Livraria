@@ -5,7 +5,10 @@ import { useNavigate } from "react-router-dom";
 // Components
 import Alert from "../components/Alert";
 
-const Contato = () => {
+// Icons
+import { VscFeedback } from "react-icons/vsc";
+
+const Contact = () => {
   const navigate = useNavigate();
 
   const [name, setName] = useState("");
@@ -37,7 +40,9 @@ const Contato = () => {
       className="flex justify-center items-center flex-col"
       style={{ height: "99vh" }}
     >
-      <h1 className="font-bold text-2xl mt-10">Deixe seu feedback</h1>
+      <VscFeedback size={50} />
+
+      <h1 className="font-bold text-2xl">Deixe seu feedback</h1>
 
       <form
         onSubmit={handleSubmit}
@@ -80,50 +85,17 @@ const Contato = () => {
         <fieldset className="mb-4">
           <legend className="block mb-2">Tipo de feedback:</legend>
           <div className="flex flex-wrap">
-            <label htmlFor="elogio" className="flex items-center mr-4">
-              <input
-                type="radio"
-                name="opcao"
-                value="elogio"
-                className="mr-2"
-                checked
-                onChange={() => setTypeFeedback("elogio")}
-              />
-              Elogio
-            </label>
-
-            <label htmlFor="critica" className="flex items-center mr-4">
-              <input
-                type="radio"
-                name="opcao"
-                value="critica"
-                className="mr-2"
-                onChange={() => setTypeFeedback("critica")}
-              />
-              Crítica
-            </label>
-
-            <label htmlFor="sugestao" className="flex items-center mr-4">
-              <input
-                type="radio"
-                name="opcao"
-                value="sugestao"
-                className="mr-2"
-                onChange={() => setTypeFeedback("sugestao")}
-              />
-              Sugestão
-            </label>
-
-            <label htmlFor="outro" className="flex items-center">
-              <input
-                type="radio"
-                name="opcao"
-                value="outro"
-                className="mr-2"
-                onChange={() => setTypeFeedback("outro")}
-              />
-              Outro
-            </label>
+            <select
+              name="opcao"
+              value={typeFeedback}
+              onChange={(e) => setTypeFeedback(e.target.value)}
+              className="text-lg mr-2 bg-transparent"
+            >
+              <option value="elogio">Elogio</option>
+              <option value="critica">Crítica</option>
+              <option value="sugestao">Sugestão</option>
+              <option value="outro">Outro</option>
+            </select>
           </div>
         </fieldset>
 
@@ -151,4 +123,4 @@ const Contato = () => {
   );
 };
 
-export default Contato;
+export default Contact;

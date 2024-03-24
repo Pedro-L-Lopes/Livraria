@@ -58,7 +58,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    to="/contato"
+                    to="/contact"
                     className="text-white hover:opacity-75 hover:border-b"
                   >
                     Contato

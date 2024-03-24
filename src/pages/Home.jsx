@@ -72,11 +72,13 @@ const home = () => {
           <input
             type="text"
             placeholder="Seu nome"
+            required
             className="p-2 border mx-2 rounded-sm"
           />
           <input
             type="email"
             placeholder="Seu email"
+            required
             className="p-2 border mx-2 rounded-sm"
           />
           <button className="p-2 bg-gray-800 text-white rounded-sm">

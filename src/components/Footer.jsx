@@ -2,7 +2,7 @@ import { FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-center text-lg text-white p-5">
+    <footer className="bg-gray-900 text-center text-lg text-white p-5">
       <div className="flex justify-center items-center gap-5 ">
         <a
           href="https://www.instagram.com/world_record_egg/"

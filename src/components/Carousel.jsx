@@ -1,5 +1,5 @@
 // Hooks
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // Icons
 import { IoIosArrowBack } from "react-icons/io";
@@ -25,6 +25,11 @@ const Carousel = () => {
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
+
+  useEffect(() => {
+    const intervalId = setInterval(nextSlide, 2000);
+    return () => clearInterval(intervalId);
+  }, []);
 
   return (
     <div className="carousel relative">

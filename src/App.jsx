@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 
 // Pages
 import Home from "./pages/Home";
-import Contato from "./pages/Contato";
+import Contact from "./pages/Contact";
 import Book from "./pages/Book";
 
 // Books
@@ -22,7 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/books" element={<Books />} />
-          <Route path="/contato" element={<Contato />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/books/:bookId" element={<Book books={books} />} />
         </Routes>
         <Footer />
